@@ -8,7 +8,13 @@ var NYtimeDate = "bestsellers_date";
 var NYtimeListFiction = "combined-print-and-e-book-fiction";
 var NYtimeListNonfiction ="combined-e-book-and-print-nonfiction";
 
-
+// date and month
+$( function() {
+    $( "#datepicker" ).datepicker({
+      changeMonth: true,
+      changeYear: true
+    });
+  } );
 
 // Fetch NYtimes list - 
 
