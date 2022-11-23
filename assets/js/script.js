@@ -1,0 +1,1 @@
+cover.innerHTML += "<img src='https://covers.openlibrary.org/b/isbn/" +isbnNum[0]+ "-M.jpg'>";
