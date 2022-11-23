@@ -1,0 +1,1 @@
+var NYtimesAPIkey = pMMnLgkXzvtnJ9YkVw0FoZHJsXRo2vnB
