@@ -3,29 +3,42 @@ var isbn = [];
 var title = "";
 var author = "";
 var date = "";
-var NYtimeDate = "published_date";
+var NYtimeDate = "bestsellers_date";
 var NYtimeListFiction = "combined-print-and-e-book-fiction";
 var NYtimeListNonfiction ="combined-e-book-and-print-nonfiction";
 
 
-// Already have function for date from jQuery
 
-//  Fetch NYtimes list - https://api.nytimes.com/svc/books/v3/lists/{date}/{list}.json
-        // (date formate - YYYY/MM/DD)  ^(\d{4}-\d{2}-\d{2}|current)$
-        // List1 - combined-print-and-e-book-fiction
-        // List2 - combined-e-book-and-print-nonfiction
+// Fetch NYtimes list - 
+
+
+// List1 - combined-print-and-e-book-fiction
+function fictionList() { 
+  } 
+  https://api.nytimes.com/svc/books/v3/lists/{date}/{list}.json
+        
+  
+// List2 - combined-e-book-and-print-nonfiction
+function nonfictionList() {
+} - https://api.nytimes.com/svc/books/v3/lists/{date}/{list}.json
+
+
 
 //  Function to search by date - bestsellers_date
-
+// (date format - YYYY/MM/DD)  ^(\d{4}-\d{2}-\d{2}|current)$
+function searchBydate() { 
+}
 
 
 //  pull ISBN from NY Times - isbn10
-
-
+function NYTisbn() {  
+}
 
 //  store ISBN into ISBN array
+
+
+// For loop to take ISBN from array and append to cards
     for (var i = 0; index < isbn.length; i++) {
         const element = array[index];
     }
 
-//  
