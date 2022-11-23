@@ -1,5 +1,5 @@
-cover.innerHTML += "<img src='https://covers.openlibrary.org/b/isbn/" +isbnNum[0]+ "-M.jpg'>";
-var NYtimesAPIkey = pMMnLgkXzvtnJ9YkVw0FoZHJsXRo2vnB;
+// cover.innerHTML += "<img src='https://covers.openlibrary.org/b/isbn/" +isbnNum[0]+ "-M.jpg'>";
+var NYtimesAPIkey = "pMMnLgkXzvtnJ9YkVw0FoZHJsXRo2vnB";
 var isbn = [];
 var title = "";
 var author = "";
@@ -17,8 +17,15 @@ $(function() {
   } );
 
 // Fetch NYtimes list - 
+fetch("https://api.nytimes.com/svc/books/v3/lists/current/hardcover-fiction.json?api-key=" + NYtimesAPIkey)
+  .then (function(response) {
+    return response.json()
+  })
+  .then (function(data) {
+    console.log(data);
+  })
 
-
+ /* 
 // List1 - combined-print-and-e-book-fiction
 function fictionList() { 
   } 
@@ -49,3 +56,4 @@ function NYTisbn() {
         const element = array[index];
     }
 
+*/
