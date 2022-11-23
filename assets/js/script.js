@@ -1,3 +1,4 @@
+cover.innerHTML += "<img src='https://covers.openlibrary.org/b/isbn/" +isbnNum[0]+ "-M.jpg'>";
 var NYtimesAPIkey = pMMnLgkXzvtnJ9YkVw0FoZHJsXRo2vnB;
 var isbn = [];
 var title = "";
