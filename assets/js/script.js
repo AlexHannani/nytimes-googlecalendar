@@ -1,5 +1,5 @@
-cover.innerHTML += "<img src='https://covers.openlibrary.org/b/isbn/" +isbnNum[0]+ "-M.jpg'>";
-var NYtimesAPIkey = pMMnLgkXzvtnJ9YkVw0FoZHJsXRo2vnB;
+// cover.innerHTML += "<img src='https://covers.openlibrary.org/b/isbn/" +isbnNum[0]+ "-M.jpg'>";
+var NYtimesAPIkey = "pMMnLgkXzvtnJ9YkVw0FoZHJsXRo2vnB";
 var isbn = [];
 var title = "";
 var author = "";
@@ -8,11 +8,24 @@ var NYtimeDate = "bestsellers_date";
 var NYtimeListFiction = "combined-print-and-e-book-fiction";
 var NYtimeListNonfiction ="combined-e-book-and-print-nonfiction";
 
-
+// date and month
+$(function() {
+    $("#datepicker").datepicker({
+      changeMonth: true,
+      changeYear: true
+    });
+  } );
 
 // Fetch NYtimes list - 
+fetch("https://api.nytimes.com/svc/books/v3/lists/current/hardcover-fiction.json?api-key=" + NYtimesAPIkey)
+  .then (function(response) {
+    return response.json()
+  })
+  .then (function(data) {
+    console.log(data);
+  })
 
-
+ /* 
 // List1 - combined-print-and-e-book-fiction
 
 function searchNYTapi(query, forma) {
@@ -46,3 +59,4 @@ https://api.nytimes.com/svc/books/v3/lists?q=" + date + "&date" + NYtimeListFict
     //     const element = array[index];
     // }
 
+*/
