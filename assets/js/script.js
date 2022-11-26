@@ -17,8 +17,7 @@ $(function() {
   } );
 
 // Fetch NYtimes list - 
-
-var apiURL = 'https://api.nytimes.com/svc/books/v3/lists?=' + NYtimeDate + "&date" + NYtimeListFiction + "&lists".json? + NYtimesAPIkey:
+var apiURL = "https://api.nytimes.com/svc/books/v3/lists/overview.json?api-key=" + NYtimesAPIkey;
 
 fetch(apiURL)
   .then (function(response) {
@@ -34,8 +33,10 @@ fetch(apiURL)
 function searchNYTapi(query, forma) {
     var Url = 
 }
+https://api.nytimes.com/svc/books/v3/lists?q=" + date + "&date" + NYtimeListFiction "&list" + .json;
 
-   
+  
+        
   
 // List2 - combined-e-book-and-print-nonfiction
 
@@ -61,7 +62,3 @@ function searchNYTapi(query, forma) {
     // }
 
 */
-
-
-
-
