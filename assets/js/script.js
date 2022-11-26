@@ -17,7 +17,10 @@ $(function() {
   } );
 
 // Fetch NYtimes list - 
-fetch("https://api.nytimes.com/svc/books/v3/lists/current/hardcover-fiction.json?api-key=" + NYtimesAPIkey)
+
+var apiURL = 'https://api.nytimes.com/svc/books/v3/lists?=' + NYtimeDate + "&date" + NYtimeListFiction + "&lists".json? + NYtimesAPIkey:
+
+fetch(apiURL)
   .then (function(response) {
     return response.json()
   })
@@ -31,10 +34,8 @@ fetch("https://api.nytimes.com/svc/books/v3/lists/current/hardcover-fiction.json
 function searchNYTapi(query, forma) {
     var Url = 
 }
-https://api.nytimes.com/svc/books/v3/lists?q=" + date + "&date" + NYtimeListFiction "&list" + .json;
 
-  
-        
+   
   
 // List2 - combined-e-book-and-print-nonfiction
 
@@ -60,3 +61,7 @@ https://api.nytimes.com/svc/books/v3/lists?q=" + date + "&date" + NYtimeListFict
     // }
 
 */
+
+
+
+
