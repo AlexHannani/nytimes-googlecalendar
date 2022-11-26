@@ -17,15 +17,16 @@ $(function() {
   } );
 
 // Fetch NYtimes list - 
-var apiURL = "https://api.nytimes.com/svc/books/v3/lists/overview.json?api-key=" + NYtimesAPIkey;
-
-fetch(apiURL)
+fetch("https://api.nytimes.com/svc/books/v3/lists/overview.json?api-key=" + NYtimesAPIkey)
   .then (function(response) {
     return response.json()
   })
   .then (function(data) {
     console.log(data);
-  })
+  }) 
+
+
+
 
  /* 
 // List1 - combined-print-and-e-book-fiction
