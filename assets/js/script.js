@@ -9,7 +9,7 @@ var NYtimeListFiction = "combined-print-and-e-book-fiction";
 var NYtimeListNonfiction ="combined-e-book-and-print-nonfiction";
 
 // date and month
-$(function() {
+$(function(calendar) {
     $("#datepicker").datepicker({
       changeMonth: true,
       changeYear: true
