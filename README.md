@@ -2,43 +2,35 @@
 
 ## Description
 
-Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
+The motivation and purpose behind this project was to create a site where you can view the best selling books of any week the user selects. It solves the issue of not only having a quick and easy to use database, but it's also easy on the eyes and accessible.
 
-- What was your motivation?
-- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
-- What problem does it solve?
-- What did you learn?
-
-## Installation
-
-What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
+We learned a lot about using different APIs and how we can make them work together.  We also learned a lot about using Bulma to style our webpage.
 
 ## Usage
 
-Provide instructions and examples for use. Include screenshots as needed.
+Link to deployed url: 
 
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
+To use, all you have to do is select a date from the drop-down calendar. The top five non-fiction and top five fiction books of that week will then populate onto the page. Under the books image, you'll then see the books title, author, and description of the book. Each card is also fit with an Amazon link, so the user can purchase the book!
 
-    ```md
-    ![alt text](assets/images/screenshot.png)
-    ```
+
+![alt text](assets/images/screenshot.png)
+
 
 ## Credits
 
-List your collaborators, if any, with links to their GitHub profiles.
-
-If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
-
-If you followed tutorials, include links to those here as well.
+New York Times API: [link](https://developer.nytimes.com/)
+Bulma: [link](https://bulma.io/)
 
 ## License
 
-The last section of a high-quality README file is the license. This lets other developers know what they can and cannot do with your project. If you need help choosing a license, refer to [https://choosealicense.com/](https://choosealicense.com/).
+MIT License
+
+A short and simple permissive license with conditions only requiring preservation of copyright and license notices. Licensed works, modifications, and larger works may be distributed under different terms and without source code.
 
 ## Features
 
-If your project has a lot of features, list them here.
-
-## Tests
-
-Go the extra mile and write tests for your application. Then provide examples on how to run them here.
+The features of our app are as follows:
+- the most current cover image for fiction and non-fiction books
+- the books titles with the books author right under it
+- a short description that describes the content of the book
+- an Amazon link that can be used to purchase a book the user likes
