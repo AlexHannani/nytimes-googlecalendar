@@ -26,6 +26,11 @@
   height: 100%
 }
 
+.is-size-1 {
+  text-align: center;
+  text-decoration: underline;
+}
+
 .datestyles {
   display: flex;
   justify-content: center;
