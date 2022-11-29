@@ -94,7 +94,7 @@ function selectDate(selected) {
         <div class="content">
           ` + fictionBook.description + `
           <br>
-          <a href="${fictionBook.amazon_product_url}">Buy from Amazon</a>
+          <a href="${fictionBook.amazon_product_url}" target="_blank">Buy from Amazon</a>
           <br>
         </div>
       </div>
@@ -120,6 +120,9 @@ function selectDate(selected) {
       var author = document.createElement("p");
       var img = document.createElement("img");
       var description = document.createElement("p");
+      var isbn10 = nonFictionBook.primary_isbn10;
+      console.log("HERE______");
+      console.log("https://openlibrary.org/api/books?bibkeys=ISBN:" + i + "&jscmd=data&format=json");
 
       var cardHTML = document.createElement('div');
       cardHTML.setAttribute("class", "column");
