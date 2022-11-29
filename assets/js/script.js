@@ -11,7 +11,7 @@ var NYtimeListNonfiction ="combined-e-book-and-print-nonfiction";
 // date and month
 $(function(calendar) {
     $("#datepicker").datepicker({
-      changeMonth: true,
+      changeMonth: true, 
       changeYear: true
     });
   } );
