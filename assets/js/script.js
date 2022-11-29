@@ -21,16 +21,20 @@ $(function() {
       dateFormat: "yy-mm-dd"
     });
     $(function() {
-      $( "#datepicker" ).datepicker({ dateFormat: "yy-mm-dd" });
+      $("#datepicker").datepicker({dateFormat: "yy-mm-dd"});
       $("#datepicker").on("change",function(){
           var selected = $(this).val();
           console.log(selected);
+          // document.getElementById("type1").textContent = "Fiction";
+          // document.getElementById("type2").textContent = "Non-Fiction";
           selectDate(selected);
-        
+
         if (selected = true) {
           datePicker.addEventListener("mousedown", function() {
             fictionDisplay.innerHTML = "";
             nonFictionDisplay.innerHTML = "";
+            document.getElementById("type1").innerHTML = "";
+            document.getElementById("type2").innerHTML = "";
           })
         }
       });
@@ -58,6 +62,8 @@ function selectDate(selected) {
     return response.json()
   })
   .then (function(data) {
+    document.getElementById("type1").textContent = "Fiction";
+    document.getElementById("type2").textContent = "Non-Fiction";
     console.log(data);
     console.log(data.results.lists[0].display_name);
 
@@ -73,7 +79,7 @@ function selectDate(selected) {
       var author = document.createElement("p");
       var img = document.createElement("img");
       var description = document.createElement("p");
-      
+      var isbn10 = fictionBook.primary_isbn10;
       var cardHTML = document.createElement('div');
       cardHTML.setAttribute("class", "column");
       var card = `<div class="card">
@@ -94,7 +100,9 @@ function selectDate(selected) {
         <div class="content">
           ` + fictionBook.description + `
           <br>
-          <a href="${fictionBook.amazon_product_url}">Buy from Amazon</a>
+          `+ "<a href='https://www.goodreads.com/book/isbn/" + isbn10 + "?&format=json' target='_blank'>More Info</a>" +`
+          <br>
+          <a href="${fictionBook.amazon_product_url}" target="_blank">Buy from Amazon</a>
           <br>
         </div>
       </div>
@@ -120,6 +128,7 @@ function selectDate(selected) {
       var author = document.createElement("p");
       var img = document.createElement("img");
       var description = document.createElement("p");
+      var isbn10 = nonFictionBook.primary_isbn10;
 
       var cardHTML = document.createElement('div');
       cardHTML.setAttribute("class", "column");
@@ -142,6 +151,8 @@ function selectDate(selected) {
         <div class="content">
           ` + nonFictionBook.description + `
           <br>
+          `+ "<a href='https://www.goodreads.com/book/isbn/" + isbn10 + "?&format=json' target='_blank'>More Info</a>" +`
+          <br>
           <a href="${nonFictionBook.amazon_product_url}" target="_blank">Buy from Amazon</a>
           <br>
         </div>
@@ -160,6 +171,8 @@ function selectDate(selected) {
     }
   })
 }
+
+
  /* 
 
 
