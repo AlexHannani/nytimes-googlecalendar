@@ -21,7 +21,7 @@ $(function() {
       dateFormat: "yy-mm-dd"
     });
     $(function() {
-      $( "#datepicker" ).datepicker({ dateFormat: "yy-mm-dd" });
+      $("#datepicker").datepicker({dateFormat: "yy-mm-dd"});
       $("#datepicker").on("change",function(){
           var selected = $(this).val();
           console.log(selected);
