@@ -1,0 +1,21 @@
+.body {
+  margin: 0px;
+  padding: 0px;
+  background-color: rgb(245, 242, 232);
+}
+
+.header {
+  text-align: center;
+  background-color: black;
+  color: white;
+  margin: 0px;
+  padding: 0px;
+}
+
+.card {
+  height: 100%
+}
+
+
+
+
