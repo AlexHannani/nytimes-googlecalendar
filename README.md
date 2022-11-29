@@ -13,14 +13,23 @@ Link to deployed url: [here](https://alexhannani.github.io/nytimes-googlecalenda
 To use, all you have to do is select a date from the drop-down calendar. The top five non-fiction and top five fiction books of that week will then populate onto the page. Under the books image, you'll then see the books title, author, and description of the book. Each card is also fit with an Amazon link, so the user can purchase the book!
 
 
-![alt text](assets/images/screenshot.png)
+![alt text](./assets/images/sample.png)
 
 
 ## Credits
 
-New York Times API: [link](https://developer.nytimes.com/)
-Bulma: [link](https://bulma.io/)
+New York Times API: [link to API](https://developer.nytimes.com/)
 
+Bulma: [link to API](https://bulma.io/)
+
+GoodReads: [link to API](https://www.goodreads.com/api)
+
+
+Contributers:
+- Alex H.
+- Dylan P.
+- Morgan D.
+- Connor C.
 ## License
 
 MIT License
