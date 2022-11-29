@@ -63,11 +63,11 @@ function selectDate(selected) {
       var description = document.createElement("p");
 
       var cardHTML = document.createElement('div');
-
-      var card = `<div class="card column">
+      cardHTML.setAttribute("class", "column");
+      var card = `<div class="card">
       <div class="card-image">
         <figure class="image">
-          <img src=" ${fictionBook.book_image} " style = "height: auto; width: 100%" alt="Placeholder image">
+          <img src=" ${fictionBook.book_image} " class="book-image" alt="Placeholder image">
         </figure>
       </div>
       <div class="card-content">
@@ -109,11 +109,12 @@ function selectDate(selected) {
       var description = document.createElement("p");
 
       var cardHTML = document.createElement('div');
-
-      var card = `<div class="card column">
+      cardHTML.setAttribute("class", "column");
+      // <figure class="is-flex is-align-items-center is-justify-content-center image is-128x128"></figure>
+      var card = `<div class="card">
       <div class="card-image">
         <figure class="image">
-          <img src=" ${nonFictionBook.book_image} " style = "height: auto; width: 100%" alt="Placeholder image">
+          <img src=" ${nonFictionBook.book_image}" class="book-image" alt="Placeholder image">
         </figure>
       </div>
       <div class="card-content">
