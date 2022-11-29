@@ -26,6 +26,31 @@
   height: 100%
 }
 
+.datestyles {
+  display: flex;
+  justify-content: center;
+}
+p {
+  font-size:large;
+  margin-top: 10px;
+}
+.ui-datepicker-header {
+  background-color: black;
+}
+.ui-state-active {
+  background-color: dimgray!important;
+}
+.ui-state-default, .ui-widget-content {
+  border: none!important;
+}
+.ui-state-highlight {
+  background-color: blueviolet!important;
+  color: white!important;
+}
+.ui-icon-circle-triangle {
+  background-color: white;
+}
+
 
 
 
