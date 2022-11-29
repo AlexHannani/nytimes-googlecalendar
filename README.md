@@ -8,7 +8,7 @@ We learned a lot about using different APIs and how we can make them work togeth
 
 ## Usage
 
-Link to deployed url: 
+Link to deployed url: [here](https://alexhannani.github.io/nytimes-googlecalendar/)
 
 To use, all you have to do is select a date from the drop-down calendar. The top five non-fiction and top five fiction books of that week will then populate onto the page. Under the books image, you'll then see the books title, author, and description of the book. Each card is also fit with an Amazon link, so the user can purchase the book!
 
