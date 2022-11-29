@@ -10,6 +10,8 @@ var NYtimeListNonfiction ="combined-e-book-and-print-nonfiction";
 var bookTitle = document.getElementById("title");
 var fictionDisplay = document.getElementById("fiction");
 var nonFictionDisplay = document.getElementById("nonFiction");
+var datePicker = document.getElementById("datepicker");
+
 
 // date and month
 $(function() {
@@ -24,10 +26,20 @@ $(function() {
           var selected = $(this).val();
           console.log(selected);
           selectDate(selected);
-
+        
+        if (selected = true) {
+          datePicker.addEventListener("mousedown", function() {
+            fictionDisplay.innerHTML = "";
+            nonFictionDisplay.innerHTML = "";
+          })
+        }
       });
   });
-  } );
+  });
+
+// datePicker.addEventListener("mousedown", function() {
+//   window.location.reload();
+// })
 
 // Fetch NYtimes list - 
 // fetch("https://api.nytimes.com/svc/books/v3/lists/overview.json?api-key=" + NYtimesAPIkey)
@@ -61,7 +73,7 @@ function selectDate(selected) {
       var author = document.createElement("p");
       var img = document.createElement("img");
       var description = document.createElement("p");
-
+      
       var cardHTML = document.createElement('div');
 
       var card = `<div class="card column">
@@ -81,7 +93,8 @@ function selectDate(selected) {
     
         <div class="content">
           ` + fictionBook.description + `
-          <a href="#">#css</a> <a href="#">#responsive</a>
+          <br>
+          <a href="${fictionBook.amazon_product_url}">Buy from Amazon</a>
           <br>
         </div>
       </div>
@@ -127,7 +140,8 @@ function selectDate(selected) {
     
         <div class="content">
           ` + nonFictionBook.description + `
-          <a href="#">#css</a> <a href="#">#responsive</a>
+          <br>
+          <a href="${nonFictionBook.amazon_product_url}" target="_blank">Buy from Amazon</a>
           <br>
         </div>
       </div>
